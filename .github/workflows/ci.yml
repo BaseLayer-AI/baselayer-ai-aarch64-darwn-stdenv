@@ -11,8 +11,6 @@ jobs:
       run: cat nix-installer.sh | sh -s -- install --no-confirm
     - name: nix --version
       run: nix --version
-    - name: nix run
-      run: nix run
-    - name: bash -c 'nix run #info'
-      run: bash -c 'nix run #info'
+    - name: make 
+      run: make
 
