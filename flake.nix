@@ -22,11 +22,12 @@ ls -lR ${builtins.toString host.stdenv}
 echo 'host.stdenv/setup'
 cat -n ${builtins.toString host.stdenv}/setup
 echo 'host.stdenv.shell'
-echo ${builtins.toString host.stdenv.shell}
-ls -lR ${builtins.toString host.stdenv.shell}
 echo ${host.coreutils}
 ls -l ${host.coreutils}/bin |cat -n
 ${host.coreutils}/bin/uname -a
+echo ${builtins.toString host.stdenv.shell}
+ls -lR ${builtins.toString host.stdenv.shell}
+${host.stdenv.shell} --version
 ''; };
   };
 }
