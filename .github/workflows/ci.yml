@@ -2,7 +2,7 @@ name: ci
 on: push
 jobs:
   aarch64-darwin:
-    runs-on: macos-27
+    runs-on: macos-26
     steps:
     - uses: actions/checkout@v7
     - name: uname-a
