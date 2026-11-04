@@ -11,3 +11,5 @@ all:
 	nix run github:BaseLayer-AI/baselayer-ai-aarch64-darwn-stdenv#info
 	nix run "https://flakehub.com/f/BaseLayer-AI/baselayer-ai-aarch64-darwn-stdenv/*"#info
 ```
+
+https://github.com/BaseLayer-AI/baselayer-ai-aarch64-darwn-stdenv/actions/workflows/ci.yml
